@@ -7,19 +7,19 @@ INSERT INTO users (
   is_admin
 )
 VALUES
-  ('Super', NULL, 'Admin', 'superadmin', md5('superadmin'), TRUE),
-  ('John', 'William', 'Doe', 'j.doe', md5('password'), FALSE),
-  ('Stephen', NULL, 'King', 's.king', md5('password'), FALSE),
-  ('Peter', NULL, 'Parker', 'p.parker', md5('spidey'), FALSE);
+  ('Super', NULL, 'Admin', 'superadmin', md5('adminpassword'), TRUE),
+  ('Иван', 'Владимирович', 'Кукушкин', 'j.doe', md5('passwordJDOE'), FALSE),
+  ('Степан', NULL, 'Королев', 's.king', md5('passwordSKINGS'), FALSE),
+  ('Петр', NULL, 'Паркур', 'p.parker', md5('PPARKERspidey'), FALSE);
 
 INSERT INTO students (name) VALUES
-  ('Chuck'), ('James'), ('Thor'), ('Clint'),
-  ('Richie'), ('Bill'), ('Ben'), ('Eddie');
+  ('Чук'), ('Иван'), ('Толя'), ('Коля'),
+  ('Рома'), ('Боря'), ('Вениамин'), ('Эдуард Ф.');
 
 INSERT INTO courses (title, description) VALUES
-  ('Math', '2+2 = 5'),
-  ('Grammar', 'Wi learn haw tu write korektli'),
-  ('Physics', 'E=mc^2');
+  ('Математика', '2+2 = 5'),
+  ('Русский язык', 'Сложнасачиненные придлажения'),
+  ('Физика', 'E=mc^2');
 
 INSERT INTO marks(student_id, course_id, points) VALUES
   (1, 1, 4), (1, 1, 5), (1, 1, 3), (1, 1, 4),

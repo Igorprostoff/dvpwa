@@ -2,7 +2,7 @@ import logging
 from datetime import datetime
 from itertools import groupby
 
-from aiohttp.web import Request, HTTPFound
+from aiohttp.web import Request, HTTPFound, Response
 from aiohttp.web_exceptions import HTTPNotFound, HTTPForbidden
 from aiohttp_jinja2 import template
 from aiohttp_session import get_session
@@ -18,6 +18,9 @@ from sqli.utils.auth import get_auth_user, authorize
 
 log = logging.getLogger(__name__)
 
+async def health(request: Request):
+    app: Application = request.app
+    return Response(text="")
 
 @template('index.jinja2')
 async def index(request: Request):

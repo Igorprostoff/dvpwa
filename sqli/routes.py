@@ -9,6 +9,7 @@ DIR_PATH = dirname(realpath(__file__))
 def setup_routes(app: Application):
     app.router.add_route('GET', r'/', views.index)
     app.router.add_route('POST', r'/', views.index)
+    app.router.add_route('GET', r'/health', views.health)
 
     app.router.add_route('GET', r'/students/', views.students)
     app.router.add_route('POST', r'/students/', views.students)

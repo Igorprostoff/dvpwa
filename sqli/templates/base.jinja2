@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/materialize.min.css"/>
 
-    <title>{% block title %}SQLI{% endblock %}</title>
+    <title>{% block title %}Главная{% endblock %}</title>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
                     <form method="POST" action="/logout/">
                         <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
                         <div class="valign-wrapper" style="height: 100%">
-                            <button class="btn pink waves-effect waves-light" type="submit">Log out</button>
+                            <button class="btn pink waves-effect waves-light" type="submit">Выйти</button>
                         </div>
                     </form>
                 </li>
@@ -41,11 +41,11 @@
                 <li>
                     <form method="POST" action="/logout/">
                         <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
-                        <button class="btn pink waves-effect waves-light" type="submit">Log out</button>
+                        <button class="btn pink waves-effect waves-light" type="submit">Выйти</button>
                     </form>
                 </li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">Меню</i></a>
         {% endif %}
     </div>
 </nav>

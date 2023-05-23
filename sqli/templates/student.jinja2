@@ -4,8 +4,8 @@
 
 {% block breadcrumbs %}
     <div class="col s12">
-        <a href="/" class="breadcrumb">SQLI</a>
-        <a href="/students/" class="breadcrumb">Students</a>
+        <a href="/" class="breadcrumb">Главная</a>
+        <a href="/students/" class="breadcrumb">Студенты</a>
         <a href="/students/{{ student.id }}" class="breadcrumb">{{ student.name | e }}</a>
     </div>
 {% endblock %}
@@ -21,9 +21,9 @@
             <table class="responsive-table bordered highlight">
                 <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Points</th>
+                    <th>Дата</th>
+                    <th>Время</th>
+                    <th>Очки</th>
                 </tr>
                 </thead>
 
@@ -41,6 +41,6 @@
         </div>
     {% endfor %}
     {% else %}
-        <p>No results available</p>
+        <p>Результаты недоступны</p>
     {% endif %}
 {% endblock %}
